@@ -1,0 +1,75 @@
+/* src/components/ColumnDropdown.css */
+
+.dropdown-content-checkbox {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-content-checkbox label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dropdown-content-checkbox button {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content-checkbox button:hover {
+    background-color: #f2f2f2;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #bae3f4;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #8966d0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.custom-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content button {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
